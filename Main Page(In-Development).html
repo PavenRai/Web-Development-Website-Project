@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Main Page</title>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: white;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .leftcol {
+        background-color: grey;
+       
+   
+    }
+    
+    .main {
+        background-color: grey;
+        margin: 0px;
+        padding: 0px;
+        overflow: auto;
+    }
+    
+    .rightcol {
+        background-color: grey;
+        
+    }
+    
+    .container {
+        background-color: white;
+        display: grid;
+        grid-template-columns: 15% auto 15%;
+        grid-column-gap: 15px;
+        height: 100vh;
+        margin: 0px 10px;
+    }
+    
+    .main-top-img {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .img-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        grid-gap: 4px;
+    }
+    
+    .img-container img {
+        width: 270px;   
+    }
+    
+    .main .heading1 {
+        font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+        text-align: center;
+    }
+    
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="leftcol">
+        Left Column
+    </div>
+    <div class="main">
+        <img src="https://funnyness.com/manual/spect/cat-glass-spectacle%20(1).jpg" alt="main-top-image" class="main-top-img">
+        
+        <h1 class="heading1">Glasses</h1>
+        
+        <div class="img-container">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Camden-186.25-PeachBrownFade-SIDE_large.jpg?v=1442244874" alt="Img1">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Camden-186.25-PeachBrownFade-SIDE_large.jpg?v=1442244874" alt="Img2">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Camden-M-10-MatteBlack-SIDE_large.jpg?v=1442244954" alt="Img3">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Camden-M-d11-MatteDarkTort-SIDE_large.jpg?v=1442244950" alt="Img4">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Camden-d14-DarkBlue-SIDE_large.jpg?v=1442244967" alt="Img5">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Claremont-Zduplicate-d14-S_large.jpg?v=1451755464" alt="Img6">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Claremont-10-Black-SIDE_large.jpg?v=1451755487" alt="Img7">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Claremont-165-Bordeaux-SIDE._large.jpg?v=1451755552" alt="Img8">
+            <img src="https://cdn.shopify.com/s/files/1/0934/2470/products/Claremont-186.25-PeachBrownFade-SIDE_large.jpg?v=1451755587" alt="Img9">
+        </div>
+    </div>
+    <div class="rightcol">
+        Right Column
+    </div>
+</div>
+</body>
+</html>
