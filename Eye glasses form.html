@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>eye store form</title>
+	<style>
+		/* base style */
+		.form-group ul {
+			list-style: none;
+			margin: 0 0 2em;
+			padding: 0;
+		}
+		.form-group li {
+			padding: 0.05em;
+			margin-bottom: 0.5em;}
+			
+			label {
+				display: inline-block;
+				width: 0.02em
+				padding: 0.08em
+			}	
+		.form-fields input[type="text"]{
+			width: 100px;
+		}
+			input {
+				display: inline-block;
+				width: auto;
+				padding: 0.06em
+			}
+		/* flex */
+		li{
+			display: inline-flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<form method = "get" class="register-form">
+			<fieldset class ="form-group" >
+				<legend>Order form</legend>
+				<ul class = "form-fields">
+					<li>
+						<label for ="fname">Firstname:</label>
+						<input type = "text" name="fname" id ="fname" placeholder ="Firstname please..." class ="text-input" required>
+					</li>
+					<li>
+						<label for ="lname">Lastname:</label>
+						<input type = "text" name="lname" id ="lname" placeholder ="Fastname please..." class ="text-input" required>
+					</li>
+					<li>
+						<label for="male">Male</label>
+						<input type="radio" id="male" name="gender" value="male">
+					</li>
+					<li>
+						<label for="female">Female</label>
+						<input type="radio" id="female" name="gender" value="female">
+					</li>
+					<li>
+						<label for ="email">Email:</label>
+						<input type="email" name="email" id="email" placeholder ="Email please..." class ="text-input" required>
+					</li>
+					<li>
+						<label for="street address">Street Address:</label>
+						<input type="text" name="street address" id="street address" placeholder="Street Address..." class="text-input" required>
+					</li>
+					<li>
+						<label for="city">City:</label>
+						<input type="text" name="city" id="city" placeholder="City" class="text-input" required>
+					</li>
+					<li>
+						<label for="province">Province:</label>
+						<input type="text" name="province" id="province" placeholder="Province" class="text-input">
+					</li>
+					<li>
+						<label for="zip-code">Zip code:</label>
+						<input type="text" name="zip-code" id="zip-code" placeholder="Zip code" class="text-input" required>
+					</li>
+					<li>
+						<label for="phone">Phone number:</label>
+						<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+						<select class="phone-type" id="phone1" name="phone" >
+							<option value ="m">Mobile</option>
+							<option value ="r">Residence</option>
+							<option value ="o">Office</option>
+						</select>
+					</li>
+					<li>
+						<label for ="Prescription Type">Prescription Type:</label>
+						<select id= "Prescription Type">
+							<option>Far sighted</option>
+							<option>Fear sighted</option>
+							<option>Bi-focal</option>
+							<option>Sunglasses</option>
+						</select>
+					</li>
+					<li>
+						<label for="Lens Type">Lens Type:</label>
+						<select>
+							<option> Clear</option>
+							<option>Blue Llht blocking</option>
+							<option>Sun</option>
+							<option>Light Inteligent Lenses</option>
+						</select>
+<!--						<input type="text" name="Lens Type" id="Lens Type" placeholder="..." class="text-input">-->
+					</li>
+					
+				</ul>
+			</fieldset>
+			<fieldset class ="form-group">
+				<legend>Right eye</legend>
+				<ul class = "form-right-eye">
+					<li>
+						<label  for="sphere">Sphere (SPH) </label>
+						<input type="text" id="sph" placeholder="0.00" value="">
+					</li>
+					<li>
+						<label  for="Cylinder">Cylinder (CYL)</label>
+						<input type="text" id="syl" placeholder="0.00"  value="">
+					</li>
+					<li>
+						<label for="Axis">Axis</label>
+						<input type="text" id="Axis" value="">
+					</li>
+					<li>
+						<label for="PD">Addition (ADD)</label>
+						<input type="text" id="ADD" value="">
+					</li>
+				</ul>
+		</fieldset >
+		<fieldset class ="form-group">
+				<legend>Left eye</legend>
+				<ul class = "form-left-eye">
+					<li>
+						<label  for="sphere">Sphere (SPH) </label>
+						<input type="text" id="l-sph" placeholder="0.00"  value="">
+					</li>
+					<li>
+						<label  for="Cylinder">Cylinder (CYL)</label>
+						<input type="text" id="l-syl" placeholder="0.00"  value="">
+					</li>
+					<li>
+						<label for="Axis">Axis</label>
+						<input type="text" id="l-Axis" value="">
+					</li>
+					<li>
+						<label for="PD">PD (Pupillary Distance)</label>
+						<input type="text" id="l-ADD" value="">
+					</li>
+				</ul>
+		</fieldset>
+		<fieldset class ="form-submit" >
+				<h3>All Done!</h3>
+				<button type = "submit" class = "Finished">Add to cart </button>
+				<button type ="reset" class = "Finished"> Reset</button>
+			</fieldset>
+	</form>
+</body>
+</html>
