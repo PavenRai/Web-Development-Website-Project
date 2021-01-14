@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+<title>Form</title>
+	<style>
+		
+		/* base style */
+		.form-group ul {
+			list-style: none;
+			margin: 0 0 2em;
+			padding: 0;
+		}
+		.form-group li {
+			margin-bottom: 0.5em;
+		}
+		.form-group h3{
+			margin-bottom: 0.8em;
+		}
+
+			
+}
+		
+		
+	
+		}
+/*flex */
+		.register-form {
+			display: flex;
+			flex-wrap: wrap;
+			margin-right: -3em;
+		}
+		
+		.form-group {
+			flex: 1 0 300px;
+			margin-right: 2em;
+		}
+		
+		.form-submit {
+			flex:100%;
+		}
+		.f
+		.form-fields li {
+			display: flex;
+			flex-wrap: wrap}
+		.form-fields  li, {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.form-fields input[type="text"],
+		.form-fields input[type="tel"],
+		.form-fields input[type="email"],
+		.form-fields input[type="number"],
+		.form-fields select {
+			flex: 1 0 230px;
+			
+		}
+		.form-fields label {
+			flex: 1 0 90px;
+			max-width: 200px;
+		}
+	
+		}
+		@media only screen and (max-width: 320px) {
+			label{
+				display: inline-block;
+				flex-wrap: nowrap;
+			}
+			.register-form{
+				display: block;
+				flex-wrap: nowrap;
+			}
+			.form-group{
+				display: block;
+				width:100%;!important;
+				flex-wrap: nowrap;
+			}
+		}
+		
+		@media screen and (max-width: 400px){
+			body{
+				flex: 0;
+				width: 100%;
+				margin: 0;
+				padding: 0 0 2em;
+			}
+			header, .form-submit {
+				padding: 2% 5%;
+			}
+			
+		}
+	
+	</style>	
+	
+</head>
+	
+<body>
+	<div class = "container">
+		<form method = "get" class="register-form">
+			<fieldset class ="form-group" >
+				<legend>Order form</legend>
+				<ul class = "form-fields">
+					<li>
+						<label for ="fname">Firstname:</label>
+						<input type = "text" name="fname" id ="fname" placeholder ="Firstname please..." class ="text-input" required>
+					</li>
+					<li>
+						<label for ="lname">Lastname:</label>
+						<input type = "text" name="lname" id ="lname" placeholder ="Fastname please..." class ="text-input" required>
+					</li>
+					<li>
+						<label for="male">Male</label>
+						<input type="radio" id="male" name="gender" value="male">
+					</li>
+					<li>
+						<label for="female">Female</label>
+						<input type="radio" id="female" name="gender" value="female">
+					</li>
+					<li>
+						<label for ="email">Email:</label>
+						<input type="email" name="email" id="email" placeholder ="Email please..." class ="text-input" required>
+					</li>
+					<li>
+						<label for="street address">Street Address:</label>
+						<input type="text" name="street address" id="street address" placeholder="Street Address..." class="text-input" required>
+					</li>
+					<li>
+						<label for="city">City:</label>
+						<input type="text" name="city" id="city" placeholder="City" class="text-input" required>
+					</li>
+					<li>
+						<label for="province">Province:</label>
+						<input type="text" name="province" id="province" placeholder="Province" class="text-input">
+					</li>
+					<li>
+						<label for="zip-code">Zip code:</label>
+						<input type="text" name="zip-code" id="zip-code" placeholder="Zip code" class="text-input" required>
+					</li>
+					<li>
+						<label for="phone">Phone number:</label>
+						<input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+						<select class="phone-type" id="phone1" name="phone" >
+							<option value ="m">Mobile</option>
+							<option value ="r">Residence</option>
+							<option value ="o">Office</option>
+						</select>
+					</li>
+					<li>
+						<label for ="Prescription Type">Prescription Type:</label>
+						<select id= "Prescription Type">
+							<option>Far sighted</option>
+							<option>Fear sighted</option>
+							<option>Bi-focal</option>
+							<option>Sunglasses</option>
+						</select>
+					</li>
+					<li>
+						<label for="Lens Type">Lens Type:</label>
+						<select>
+							<option> Clear</option>
+							<option>Blue Llht blocking</option>
+							<option>Sun</option>
+							<option>Light Inteligent Lenses</option>
+						</select>
+					</li>
+					
+				</ul>
+			</fieldset>
+			<fieldset class ="form-group">
+				<legend>Right eye</legend>
+				<ul class = "form-right-eye">
+					<li>
+						<label  for="sphere">Sphere (SPH) </label>
+						<input type="text" id="sph" placeholder="0.00" value="">
+					</li>
+					<li>
+						<label  for="Cylinder">Cylinder (CYL)</label>
+						<input type="text" id="syl" placeholder="0.00"  value="">
+					</li>
+					<li>
+						<label for="Axis">Axis</label>
+						<input type="text" id="Axis" value="">
+					</li>
+					<li>
+						<label for="PD">Addition (ADD)</label>
+						<input type="text" id="ADD" value="">
+					</li>
+				</ul>
+		</fieldset >
+		<fieldset class ="form-group">
+				<legend>Left eye</legend>
+				<ul class = "form-left-eye">
+					<li>
+						<label  for="sphere">Sphere (SPH) </label>
+						<input type="text" id="l-sph" placeholder="0.00"  value="">
+					</li>
+					<li>
+						<label  for="Cylinder">Cylinder (CYL)</label>
+						<input type="text" id="l-syl" placeholder="0.00"  value="">
+					</li>
+					<li>
+						<label for="Axis">Axis</label>
+						<input type="text" id="l-Axis" value="">
+					</li>
+					<li>
+						<label for="PD">PD (Pupillary Distance)</label>
+						<input type="text" id="l-ADD" value="">
+					</li>
+				</ul>
+		</fieldset>
+		<fieldset class ="form-submit" >
+				<h3>All Done!</h3>
+				<button type = "submit" class = "Finished">Add to cart </button>
+				<button type ="reset" class = "Finished"> Reset</button>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
+
