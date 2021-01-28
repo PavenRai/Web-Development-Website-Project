@@ -1,0 +1,142 @@
+@charset "utf-8";
+* { Box-sizing: Border-box } 
+body{
+	margin: 0px;
+	background-color: #06223E;
+}
+.container-page{
+	height:100%;
+	width:100%;
+}
+.conatiner-all{
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	background-color: #06223E;
+	
+}
+.container{
+	display: inline-flex;
+	width:100%;
+	margin-top: 1.5%;
+	align-content: center;
+}
+.container li{
+	margin-left: auto;
+	margin-right: auto;
+}
+ul{
+	list-style-type: none;
+	padding: 0px;
+}
+
+.logo {
+	width: 30%;
+	flex:1;
+	margin-left: 15%;
+	margin-top: -2%
+}
+.shop-glasses{
+	width: 70%;
+	flex:1;
+	margin-bottom: auto;
+	transition: .2s;
+}
+
+.text{
+	margin-top:5%;
+	font-size: 250%;
+	font-family: Quicksand;
+	color:white;
+}
+.shop-glasses:hover{
+	 -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+
+.text-bottom{
+	width:70%;
+	-webkit-filter:blur(10px);
+	transition: 2s;
+	margin-top: -2%;
+}
+.text-bottom:hover{
+	-webkit-filter:blur(0px);
+}
+
+.main-page-container{
+	width: 65%;
+	text-align: center;
+		background-image: url("Website/Background-Website-Side.png");
+	background-size: 100%;
+
+}
+.main-page{
+	width: 100%;
+	display: inline-flex;
+}
+.main-page-info{
+	width: 35.1%;
+	background-color: #6E87CC;
+	text-align: center;
+}
+.glasses-image{
+	width:40%;
+	margin-top: 2%;
+}
+.image-right{
+	width:50%;
+	margin-top: 7%;
+	margin-left: 4%;
+	margin-bottom: 10%;
+	transition:.2s;
+}
+.image-right:hover{
+	 -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); 
+}
+.left-header{
+	font-family: Josefin Sans; 
+	color: white; 
+	margin-top:20%;
+	font-size: 200%;
+}
+@media all and (max-width: 700px) {  
+  .container {  
+    flex-wrap: wrap;
+  }  
+	.main-page-container
+	{
+		width:100%;
+		background-size: cover;
+	}
+	.main-page{
+		flex-wrap: wrap;
+		flex-basis: 50%;
+	}
+	.logo{
+		width: 100%;
+		margin-left: -5%;
+		margin-top: 2%;
+	}
+	.shop-glasses{
+		width:70%;
+		margin-left: 15%;
+		margin-top: 10%;
+	}
+  .container  {  
+    flex-basis: 50%;  
+		margin-left: auto;
+		margin-right: auto;
+  }
+	.main-page-info{
+		width: 100%;
+		box-shadow: -4px -5px 10px rgba(0,0,0,.3);
+	}
+	.left-header{
+		margin-top: 15%;
+	}
+	.text-bottom{
+		margin-bottom: 25%;
+	}
+}
